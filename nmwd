@@ -37,10 +37,6 @@ type_err(){
     done
 }
 
-config_github() {
-}
-
-
 ellipses() {
     indent=$(( $(tput cols) / 2))
 
@@ -55,18 +51,20 @@ ellipses() {
     done
 }
 
+echo
 echo "> brew cask install iterm2" | type_err
 sleep 1
 echo -e "\r\033[1A\033[0K"
-display_center "assets/logo_to.txt" ${normal}
+display_center "assets/logo_to.txt" ${blue}
 sleep 1
 ellipses 3
-display_center "assets/logo_from.txt" ${blue}
+display_center "assets/logo_from.txt" ${normal}
+echo
+sleep 1
 
 echo "Please enter your github username if you'd like to continue"; read ghub_name
 echo "And the email associated with that account?"; read ghub_email
 echo "Thanks ${ghub_name}! 😊 Let's get started!"
-
 git config --global user.name ${ghub_name}
 git config --global user.email ${ghub_email}
 

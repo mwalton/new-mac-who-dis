@@ -1,6 +1,6 @@
 # new-mac-who-dis
 
-New mac configurator
+![nmwd](assets/nmwd.gif)
 
 ## TODO
 
