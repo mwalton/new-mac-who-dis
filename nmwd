@@ -13,10 +13,12 @@ display_center(){
 }
 
 type_err(){
-    indent=$(( $(tput cols) / 2))
-    printf "%${indent}s%s" '' " "
+    indent=$(( ($(tput cols) / 2) - 15 ))
+    printf "%${indent}s%s[ " '' " "
     while read line
     do
+        strlen=${#line}
+        i=0
         # split single characters into lines
         grep -o . <<<$line | while read a
         do
@@ -32,13 +34,18 @@ type_err(){
             fi
             # output a space, or $a if it is not null
             echo -n "${a:- }"
+            offset=$((strlen - i))
+            echo -e -n "\033[s\033[${offset}C${blue}(▲)${normal} ]\033[u"
+            i=$((i+1))
         done
+        echo -e -n "\033[2C"
+        sleep 1
         echo
     done
 }
 
 ellipses() {
-    indent=$(( $(tput cols) / 2))
+    indent=$(( ($(tput cols) / 2) - 15))
 
     declare -a animation=("[  .    ]" "[  ..   ]" "[  ...  ]" "[       ]")
 
@@ -52,9 +59,10 @@ ellipses() {
 }
 
 echo
-echo "> brew cask install iterm2" | type_err
+echo "brew cask install iterm2" | type_err
 sleep 1
-echo -e "\r\033[1A\033[0K"
+echo -e "\r\033[1A\033[K"
+echo -e "\033[3A"
 display_center "assets/logo_to.txt" ${blue}
 sleep 1
 ellipses 3
