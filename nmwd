@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+
 blue=$(tput setaf 4)
 normal=$(tput sgr0)
 
@@ -68,7 +70,7 @@ sleep 1
 ellipses 3
 display_center "assets/logo_from.txt" ${normal}
 echo
-sleep 1
+sleep 5
 
 echo "Please enter your github username if you'd like to continue"; read ghub_name
 echo "And the email associated with that account?"; read ghub_email
@@ -91,23 +93,20 @@ brew install fish
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s `which fish`
 curl -L https://get.oh-my.fish | fish
+fish_vi_key_bindings
 
 ### VScode
 brew cask install visual-studio-code
 
 ### other CLI tools
 brew install trash
-brew install git  # upgrade to latest
+brew install git
 brew install wget
 brew install npm
 
 ### python
 brew install python3
 # curl -o- https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.sh | bash
-
-### npm essentials
-sudo npm install -g eslint
-sudo npm install -g prettify
 
 ### code editor
 brew cask install visual-studio-code
@@ -166,4 +165,4 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
-echo "All finished! 🎉 🎉 🎉 Happy coding!"
+echo "All finished! 🎉 🎉 🎉"

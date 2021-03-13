@@ -4,5 +4,5 @@
 
 ## TODO
 
-- dotfiles
+- [make awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 - anaconda install (annoyingly you need to explictly specify version)
