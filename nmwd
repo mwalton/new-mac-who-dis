@@ -165,4 +165,4 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
 
-echo "All finished! 🎉 🎉 🎉"
+echo "All done! 🎉 🎉 🎉"
