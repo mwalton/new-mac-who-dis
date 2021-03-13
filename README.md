@@ -1,8 +1,10 @@
-# new-mac-who-dis
-
 <p align="center">
   <img width="460" height="300" src="assets/nmwd.gif">
 </p>
+
+## new-mac-who-dis
+
+A (kinda) minimal quick-start installer for OSX development
 
 - devtools: brew, iterm, docker, fish shell, VS Code, python3, git, wget, npm
 - general use apps: Chrome, slack, zoom
