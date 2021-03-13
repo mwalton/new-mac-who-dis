@@ -23,4 +23,5 @@ A (kinda) minimal quick-start installer for OSX development
 
 - [make awesome dotfiles](https://github.com/webpro/awesome-dotfiles)
 - anaconda install (annoyingly you need to explictly specify release date 🙄 )
-- option to skip the goofy imsg animation 😛 
+- make imsg animation pick a random cmd
+- option to skip said goofy animation 😛 
