@@ -70,7 +70,7 @@ sleep 1
 ellipses 3
 display_center "assets/logo_from.txt" ${normal}
 echo
-sleep 5
+sleep 2
 
 echo "Please enter your github username if you'd like to continue"; read ghub_name
 echo "And the email associated with that account?"; read ghub_email
