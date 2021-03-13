@@ -1,6 +1,9 @@
 # new-mac-who-dis
+Installer for some essential development tools & configs
 
-![nmwd](assets/nmwd.gif)
+<center>
+  <img src="assets/nmwd.gif" alt="drawing" width="400"/>
+</center>
 
 ## TODO
 
