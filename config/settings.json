@@ -1,0 +1,70 @@
+{
+  "git.ignoreLegacyWarning": true,
+  "jupyter.interactiveWindowMode": "perFile",
+  "editor.minimap.enabled": false,
+  "terminal.integrated.inheritEnv": false,
+  "git.enableSmartCommit": true,
+  "git.confirmSync": false,
+  "explorer.confirmDragAndDrop": false,
+  "python.languageServer": "Pylance",
+  "todo-tree.tree.showScanModeButton": false,
+  "editor.formatOnSave": true,
+  "git.autofetch": true,
+  "workbench.editor.wrapTabs": true,
+  "workbench.editor.tabSizing": "shrink",
+  "editor.linkedEditing": true,
+  "html.autoClosingTags": true,
+  "javascript.autoClosingTags": true,
+  "typescript.autoClosingTags": true,
+  "javascript.suggest.autoImports": true,
+  "typescript.suggest.autoImports": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports": true
+  },
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+  "explorer.confirmDelete": false,
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[vue]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "[ ]",
+    "[x]"
+  ],
+  "todo-tree.regex.regex": "(//|#|<!--|;|/\\*|^|^\\s*(-|\\d+.))\\s*($TAGS)",
+  "terminal.integrated.shell.osx": "/usr/local/bin/fish",
+  "terminal.integrated.fontFamily": "Hack Nerd Font",
+  "dashboard.projectData": null,
+  "gitlens.codeLens.enabled": false,
+  "workbench.startupEditor": "none",
+  "window.restoreWindows": "none",
+  "gitmoji.additionalEmojis": [
+    {
+      "emoji": "💅",
+      "code": ":nails:",
+      "description": "Making things pretty",
+      "description_zh_cn": ""
+    }
+  ]
+}
