@@ -98,14 +98,30 @@ brew install pomotroid
 brew cask install iterm2
 brew cask install docker
 
+### fonts
+brew tap homebrew/cask-fonts
+brew install font-hack-nerd-font
+
 ### fish
 brew install fish
 echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 chsh -s `which fish`
 curl -L https://get.oh-my.fish | fish
+
+### theming and settings
 fish fish_vi_key_bindings
+cp ./config/fish_user_key_bindings.fish ~/.config/fish/functions/
 fish curl -sL https://git.io/fisher | source && fisher install jorgebucaran/fisher
 fish fisher install IlanCosman/tide
+
+### vim
+git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
+sh ~/.vim_runtime/install_awesome_vimrc.sh
+cp config/my_configs.vim ~/.vim_runtime
+
+# couldn't figure out how to install from CLI so do this: https://github.com/tallpants/vscode-theme-iterm2
+# iTerm2 > Preferences > Profiles; "Color Presets", "Import"
+wget https://raw.githubusercontent.com/tallpants/vscode-theme-iterm2/master/vscode.itermcolors
 
 ### VScode
 brew cask install visual-studio-code
@@ -182,5 +198,8 @@ defaults write com.apple.SoftwareUpdate CriticalUpdateInstall -int 1
 
 # Don’t display the annoying prompt when quitting iTerm
 defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# disable the apple press and hold "feature" for vscode
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
 
 echo "All done! 🎉 🎉 🎉"

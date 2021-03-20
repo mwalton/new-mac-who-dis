@@ -20,7 +20,7 @@ A (kinda) minimal quick-start installer for OSX development
   - don't prompt when quitting iterm2
 
 ## TODO
-
+- update docs w/ dotfile & fish theming info
 - [make](https://github.com/geerlingguy/dotfiles) [awesome](https://github.com/webpro/awesome-dotfiles) [dotfiles](https://github.com/mathiasbynens/dotfiles)
 - anaconda install (annoyingly you need to explictly specify release date 🙄 )
 - make imsg animation pick a random cmd
