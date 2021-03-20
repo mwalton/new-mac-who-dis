@@ -2,6 +2,7 @@
   "git.ignoreLegacyWarning": true,
   "jupyter.interactiveWindowMode": "perFile",
   "editor.minimap.enabled": false,
+  "python.pythonPath": "/Users/mwalton/opt/anaconda3/bin/python",
   "terminal.integrated.inheritEnv": false,
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
@@ -65,6 +66,12 @@
       "code": ":nails:",
       "description": "Making things pretty",
       "description_zh_cn": ""
+    }
+  ],
+  "vim.insertModeKeyBindings": [
+    {
+      "before": ["j", "j"],
+      "after": ["<esc>"]
     }
   ]
 }

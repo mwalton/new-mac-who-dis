@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# copy Vs-Code files
+cp $HOME/Library/Application\ Support/Code/User/{keybindings.json,settings.json} ./config/code/
+
+# copy snippets folder
+cp -r $HOME/Library/Application\ Support/Code/User/snippets ./config/code/
+
+# copy list of extensions that currently installed
+code --list-extensions --show-versions >> ./config/code/extensions.txt
+
+# vim
+cp $HOME/.vimrc ./config/
+cp $HOME/.vim_runtime/my_configs.vim ./config/
+
+# fish
+cp -r $HOME/.config/fish/{completions,conf.d,fish_plugins,fish_variables,functions} ./config/fish
+
+# push to Github
+git add -u;
+git commit -m "🔄 config backup";
+git push origin main
