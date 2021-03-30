@@ -134,8 +134,8 @@ brew install wget
 brew install npm
 
 ### python
-brew install python3
-# curl -o- https://repo.anaconda.com/archive/Anaconda3-2020.11-MacOSX-x86_64.sh | bash
+brew install anaconda
+fish_add_path /usr/local/anaconda3
 
 ### code editor
 brew cask install visual-studio-code

@@ -73,5 +73,11 @@
       "before": ["j", "j"],
       "after": ["<esc>"]
     }
+  ],
+  "workbench.editorAssociations": [
+    {
+      "viewType": "jupyter.notebook.ipynb",
+      "filenamePattern": "*.ipynb"
+    }
   ]
 }
