@@ -6,6 +6,9 @@
 
 A (kinda) minimal quick-start installer for OSX development
 
+Run `nmwd` to get the goods 🎉  Fork & pull, then run `backup` to keep any modifications you make sync'd to your github fork! 🔥 
+
+### The loadout
 - devtools: brew, iterm, docker, fish shell, VS Code, python3, git, wget, npm
 - general use apps: Chrome, slack, zoom
 - system settings:
